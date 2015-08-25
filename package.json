@@ -1,0 +1,28 @@
+{
+  "name": "gulp-responsive-images",
+  "version": "0.0.1",
+  "description": "Resize/rename images for responsive designs.",
+  "author": {
+    "name": "David Gauld",
+    "email": "dcgauld@gmail.com",
+    "url": "http://p.ota.to"
+  },
+  "main": "lib/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcgauld/gulp-responsive-images.git"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "async": "^1.4.2",
+    "gm": "^1.18.1",
+    "gulp-util": "^3.0.6",
+    "lodash": "^3.10.1",
+    "minimatch": "^2.0.10",
+    "rename": "^1.0.3",
+    "through2": "^2.0.0"
+  }
+}
