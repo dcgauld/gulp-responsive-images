@@ -1,8 +1,10 @@
 # gulp-responsive-images
 
+A simple Gulp plugin that allows the resizing and renaming of images, primarily for responsive applications. It uses GraphicsMagick to allow simple resizing, cropping, quality control and more.
+
 ## Install
 
-Install with [npm](https://npmjs.org/package/gulp-image-resize)
+Install with [npm](https://npmjs.org/package/gulp-responsive-images).
 
 ```
 npm install --save-dev gulp-responsive-images
