@@ -33,13 +33,17 @@ var responsive = require('gulp-responsive-images');
 gulp.task('default', function () {
   gulp.src('source/images/**/*')
     .pipe(responsive({
-      'hero.png': [
-        { width: 100, rename: 'hero-100.png' },
-        { width: 200, rename: 'hero-100-2x.png' }
-      ],
-      'background.png': [
-        { width: 600, crop: true }
-      ]
+      'hero.png': [{
+        width: 100,
+        suffix: '-100'
+      }, {
+        width: 100 * 2,
+        suffix: '-100-2x'
+      }],
+      '*.png': [{
+        width: 600,
+        crop: true
+      }]
     }))
     .pipe(gulp.dest('dist/images'));
 });
