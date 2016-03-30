@@ -26,6 +26,39 @@ Mac OS X (using [Homebrew](http://brew.sh/)):
 brew install graphicsmagick
 ```
 
+Windows (XP, Vista, 7, 8, and 10 - 32- or 64-bit):
+
+Decide upon [Q8 or Q16](ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/windows/README.txt), [Download](ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/windows/) and Install. Must be available from Path (select during installation.
+
+## Options
+
+```
+// Image.js
+
+var images = {
+  'hero.png': [
+      {
+      crop: false,
+      format: null,
+      gravity: 'Center',
+      height: 100,
+      overwrite: true,
+      quality: 100,
+      rename: null,
+      percentage: false,
+      sharpen: false,
+      suffix: '-100'
+      upscale: false,
+      width: 100
+    }
+  ]
+};
+module.exports = images;      
+});
+```
+
+Can also be used within the pipe to overwrite specific file configurations.
+
 ## Example
 
 ```js
@@ -44,7 +77,8 @@ gulp.task('default', function () {
       }],
       '*.png': [{
         width: 600,
-        crop: true
+        crop: true,
+        gravity: 'Center'
       }]
     }))
     .pipe(gulp.dest('dist/images'));
