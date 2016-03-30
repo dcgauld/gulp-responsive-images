@@ -14,25 +14,28 @@ npm install --save-dev gulp-responsive-images
 
 gulp-responsive-images requires GraphicsMagick to function. Installation is simple:
 
-Ubuntu:
+#### Ubuntu:
 
 ```shell
 apt-get install graphicsmagick
 ```
 
-Mac OS X (using [Homebrew](http://brew.sh/)):
+#### Mac OS X (using [Homebrew](http://brew.sh/)):
 
 ```shell
 brew install graphicsmagick
 ```
 
-Windows (XP, Vista, 7, 8, and 10 - 32- or 64-bit):
+#### Windows (XP, Vista, 7, 8, and 10) 32- or 64-bit:
 
-Decide upon [Q8 or Q16](ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/windows/README.txt), [Download](ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/windows/) and Install. Must be available from Path (select during installation.
+Decide upon [Q8 or Q16](http://www.graphicsmagick.org/INSTALL-windows.html#retrieve-install-package):
+> A Q8 version is fine for processing typical photos intended for viewing on a computer screen. If you are dealing with film, scientific, or medical images, use ICC color profiles, or deal with images that have limited contrast, then the Q16 version is recommended.
+
+[Download](http://www.graphicsmagick.org/download.html/) and Install, be sure that "Update executable search path" is checked  during installation.
 
 ## Options
 
-```
+```js
 // Image.js
 
 var images = {
