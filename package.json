@@ -21,7 +21,7 @@
     "gm": "^1.18.1",
     "gulp-util": "^3.0.6",
     "lodash": "^3.10.1",
-    "minimatch": "^2.0.10",
+    "minimatch": "^3.0.4",
     "rename": "^1.0.3",
     "through2": "^2.0.0"
   }
